@@ -1,0 +1,23 @@
+<!DOCTYPE videojuegos[
+<!ELEMENT videojuegos (Videojuego+)>
+<!ATTLIST videojuegos autor CDATA #FIXED "Sean Costelloe">
+<!ELEMENT videojuego (Nombre?, Genero?, infoGeneral?, Plataformas+, ModosJuego+)>
+<!ATTLIST videojuego idVideojuego ID #REQUIRED idRefPrecuela IDREF>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Genero (#PCDATA)>
+<!ATTLIST Genero subGenero (accion|arcade|deportivo|estrategia|simulación|deMesa|musical) “accion”>
+<!ELEMENT Plataformas (Plataforma)>
+<!ELEMENT Plataforma EMPTY>
+<!ATTLIST Plataforma precio CDATA #REQUIRED fecha CDATA #REQUIRED>
+<!ELEMENT ModosJuego (ModoJuego)+>
+<!ELEMENT ModoJuego (#PCDATA)>
+<!ELEMENT infoGeneral (Foto*, Enlace?, Idomas, Desarrollador, Distribuidor?, Descripcion?) #REQUIRED>
+<!ELEMENT Foto DEF_CONTENIDO>
+<!ELEMENT Enlace (#PCDATA)>
+<!ELEMENT Idomas DEF_CONTENIDO>
+<!ELEMENT Desarrollador DEF_CONTENIDO>
+<!ATTLIST Desarrollador nombre_atributo TYPE OBLIGATION>
+<!ELEMENT Distribuidor (#PCDATA)>
+<!ATTLIST Distribuidor nombre_atributo TYPE OBLIGATION>
+<!ELEMENT Descripcion #IMPLIED>
+]>
