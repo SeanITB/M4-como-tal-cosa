@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE videojuegos SYSTEM "CostelloeSean_videojuegos.xml">
+<videojuegos autor="Sean Costelloe">
+    <videojuego idVideojuego="" idRefPrecuela="">
+        <Nombre></Nombre>
+        <Genero subGenero=""></Genero>
+        <infoGeneral>
+            <Foto></Foto>
+            <Enlace></Enlace>
+            <Idomas></Idomas>
+            <Desarrollador></Desarrollador>
+            <Distribuidor></Distribuidor>
+            <Descripcion></Descripcion>
+        </infoGeneral>
+        <Plataformas>
+            <Plataforma></Plataforma>
+        </Plataformas>
+        <ModosJuego>
+            <ModoJuego></ModoJuego>
+        </ModosJuego>
+    </videojuego>
+</videojuegos>
